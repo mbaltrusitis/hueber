@@ -17,7 +17,7 @@ setup(
     url=URL,
     download_url="{}/tarball/{}".format(URL, VER),
     data_files=[
-    	("", ["README.rst"])
+        ("", ["README.rst"])
     ],
     license="MIT",
     keywords=["philips", "hue", "api"],
