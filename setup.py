@@ -3,15 +3,20 @@ from hueber import __version__
 from hueber import __author__
 
 
+VER = "{}.{}.{}".format(*__version__)  # major.minor.patch
+URL = "https://github.com/mbaltrusitis/hueber.git"
+
 setup(
     name="hueber",
-    version="{}.{}.{}".format(*__version__),  # major.minor.patch
+    version=VER,
     description="Python API and tooling for Philips Hue.",
     long_description=open("README.rst").read(),
     author=__author__,
     packages=["hueber", "hueber.api", "hueber.lib"],
-    url="https://github.com/mbaltrusitis/hueber.git",
+    url=URL,
+    download_url="{}/tarball/{}".format(URL, VER),
     license="MIT",
+    keywords=["philips", "hue", "api"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
