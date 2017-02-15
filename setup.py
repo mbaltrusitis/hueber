@@ -12,6 +12,7 @@ setup(
     description="Python API and tooling for Philips Hue.",
     long_description=open("README.rst").read(),
     author=__author__,
+    author_email="matthew@baltrusitis.com",
     packages=["hueber", "hueber.api", "hueber.lib"],
     url=URL,
     download_url="{}/tarball/{}".format(URL, VER),
